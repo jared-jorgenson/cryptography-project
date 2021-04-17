@@ -32,6 +32,7 @@ def atbash_encrypt(secret):
 
 def atbash_decrypt(encrypted_secret):
     # Since the atbash function reverses itself we simplify the
-    # decryption function as simply re-using it on the encryption
+    # decryption function as simply re-using the encryption function 
+    # on the encryption
     decryption = atbash_encrypt(encrypted_secret)
     return decryption
