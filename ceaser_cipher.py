@@ -20,8 +20,8 @@ def ceaser_encrypt(secret, n="right rotation"):
         else:
             secret_list.append(ord(secret[x]) - 97)
 
-    # Replace the numbers in the list created above with the ciphers indices &
-    # then replace those indices with the ciphers letters
+    # Replace the numbers in the list created above with the ciphers indices
+    # and then replace those indices with the ciphers letters
     for x in range(0, len(secret_list)):
         if type(secret_list[x]) != int:
             encryption_list.append(secret_list[x])
@@ -63,3 +63,4 @@ def ceaser_decrypt(encryption, n="left rotation"):
     # Change the decrypted list into a string
     decryption = "".join(decryption_list)
     return decryption
+
