@@ -1,0 +1,111 @@
+#:kivy 2.0.0
+
+<MainLayout>
+    do_default_tab: False
+    tab_width: self.size[0]/len(self.tab_list)
+
+    message_ceaser:message_ceaser
+    rotations_ceaser:rotations_ceaser
+    message_atbash:message_atbash
+    message_sub:message_sub
+    cipher_key_sub:cipher_key_sub
+
+
+    TabbedPanelItem:
+        text: "Ceaser Cipher"
+        background_normal: ""
+        background_color: (4/255, 37/255, 58/255)
+
+        GridLayout:
+            cols:2
+            size: root.width, root.height
+
+            Label:
+                text: "Message"
+            TextInput:
+                id:message_ceaser
+                multiline:True
+
+            Label:
+                text: "No. of Rotations"
+            TextInput:
+                id:rotations_ceaser
+                multiline:False
+
+            Button:
+                text: "Encrypt"
+                font_size: 32
+                on_press: root.press_encrypt_ceaser()
+                background_normal: ""
+                background_color: (76/255, 131/255, 122/255)
+            
+            Button:
+                text: "Decrypt"
+                font_size: 32
+                on_press: root.press_decrypt_ceaser()
+                background_normal: ""
+                background_color: (4/255, 37/255, 58/255)
+
+    TabbedPanelItem:
+        text: "Atbash Cipher"
+        background_normal: ""
+        background_color: (4/255, 37/255, 58/255)
+
+        GridLayout:
+            cols:2
+            size: root.width, root.height
+
+            Label:
+                text: "Message"
+            TextInput:
+                id:message_atbash
+                multiline:True
+
+            Button:
+                text: "Encrypt"
+                font_size: 32
+                on_press: root.press_encrypt_atbash()
+                background_normal: ""
+                background_color: (76/255, 131/255, 122/255)
+            
+            Button:
+                text: "Decrypt"
+                font_size: 32
+                on_press: root.press_decrypt_atbash()
+                background_normal: ""
+                background_color: (4/255, 37/255, 58/255)               
+
+    TabbedPanelItem:
+        text: "Substitution Cipher"
+        background_normal: ""
+        background_color: (4/255, 37/255, 58/255)
+
+        GridLayout:
+            cols:2
+            size: root.width, root.height
+
+            Label:
+                text: "Message"
+            TextInput:
+                id:message_sub
+                multiline:True
+
+            Label:
+                text: "Cipher Key"
+            TextInput:
+                id:cipher_key_sub
+                multiline:False
+
+            Button:
+                text: "Encrypt"
+                font_size: 32
+                on_press: root.press_encrypt_substitution()
+                background_normal: ""
+                background_color: (76/255, 131/255, 122/255)
+            
+            Button:
+                text: "Decrypt"
+                font_size: 32
+                on_press: root.press_decrypt_substitution()
+                background_normal: ""
+                background_color: (4/255, 37/255, 58/255)
