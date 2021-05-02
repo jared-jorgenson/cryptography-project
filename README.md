@@ -1,5 +1,7 @@
 # Cryptography Project
-In this personal project I have looked at some classical ciphers including the Ceaser cipher, the atbash cipher and a simple substitution cipher. For each cipher I wrote code which can encrypt secret messages and decrypt the encrypted secret. You can find more information about these ciphers here: [http://practicalcryptography.com/ciphers/classical-era/](http://practicalcryptography.com/ciphers/classical-era/).
+In this personal project I have looked at some classical ciphers including the Ceaser cipher, the atbash cipher and a simple substitution cipher. For each cipher I wrote code which can encrypt secret messages and decrypt the encrypted secret. Then I designed and created a GUI that demonstrates these ciphers in action making use of Kivy; a popular Python GUI library.
+
+You can find more information about these ciphers here: [http://practicalcryptography.com/ciphers/classical-era/](http://practicalcryptography.com/ciphers/classical-era/).
 
 ## Prerequisites
 
